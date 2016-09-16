@@ -21,9 +21,9 @@ namespace Simulated_Device
             Console.WriteLine("Simulated device\n");
             deviceClient = DeviceClient.Create(iotHubUri, new DeviceAuthenticationWithRegistrySymmetricKey("exitDeviceA", deviceKey));
 
-            //SendDeviceToCloudMessagesAsync();
+            SendDeviceToCloudMessagesAsync();
             ReceiveC2dAsync();
-            //SendDeviceToCloudInteractiveMessagesAsync();
+            SendDeviceToCloudInteractiveMessagesAsync();
             Console.ReadLine();
 
         }
